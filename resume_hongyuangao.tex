@@ -1,0 +1,185 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+%\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+
+\name{Hongyuan Gao} % Your name
+\address{\href{mailto://hongyuag@usc.edu}{hongyuag@usc.edu} \\ \href{https://github.com/hikoship}{github.com/hikoship} \\ \href{http://hgao.net}{hgao.net}} % Your address
+\address{(213) 245-5576 \\ 2632 Ellendale Pl., Los Angeles, CA 90007} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	OBEJECTIVE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Objective}
+CS graduate student seeking Web Development Intern position for Summer 2017.
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+\begin{rEducation}{University of Southern California}{August 2016 - May 2018 (expected)}{M.S. in Computer Science, GPA: 4.0 / 4.0}{Los Angeles, CA}
+% \item Courses in progress: Analysis of Algorithms, Web Technologies.
+\end{rEducation}
+
+\begin{rEducation}{Shanghai Jiao Tong University}{September 2012 - June 2016}{B.S. in Computer Science, GPA: 3.5 / 4.0}{Shanghai, China}
+% \item Core courses: Algorithms, Computer Architecture, Computer Networking, Data Structures, Database Systems, Operating Systems, Software Engineering.
+% \item Core courses: Algorithms, Artificial Intelligence, Compilers, Computer Architecture, Computer Networking, Data Structures, Database Systems, Operating Systems, Software Engineering.
+\end{rEducation}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Work EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{Embedded and Pervasive Computing Center of SJTU}{March 2015 - June 2016}{Research Assistant}{Shanghai, China}
+\item Devised an efficient chunk-based cache algorithm for data deduplication in backup systems based on spacial locality; improved cache hit ratio by 5.2\%  and reduced I/O latency by 17.3\%.
+\item Combined the algorithm with container technique and saved memory consumption by 50.7\%.
+\item Won A-Class Bachelor's Thesis Award (top 10\%) and published a paper in IEEE ICPADS’16.
+\end{rSubsection}
+
+\begin{rSubsection}{Siemens Manufacturing and Engineering Center Ltd.}{January 2015 - February 2015}{Intern, IT Department}{Shanghai, China}
+\item Developed a GUI lucky draw system for staff in Python for the year-end party.
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Skills}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Python, JavaScript, C, C++, Java, PHP\\
+Tools & MySQL, SQLite, Git, Apache, Nginx, Android Studio, Vim\\
+Web Frameworks & Bootstrap, Angular JS, Django, Tornado
+\end{tabular}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	Project
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+\begin{rSubsection}{Forum Posts Crawler (JavaScript, Python)}{December 2015 - April 2016}{}{}
+\item Utilized BeautifulSoup to parse HTML files of \href{http://1point3acres.com/bbs/forum.php}{1point3acres} (A forum for graduate school applicants) to JSON and visualized over 30,000 application results, which got about 1,000 visits from 17 countries within one month.
+\item Developed a data filter based on AngularJS and a query API based on Tornado web framework.
+\item Created a daemon program to manage and protect the crawler; deployed the daemon on DigitalOcean VPS.
+\end{rSubsection}
+
+\begin{rSubsection}{The US Congress Database: An Android App (Java, PHP)}{November 2016 - December 2016}{}{}
+\item Visualized the US Congress data with a user-friendly interface based on Material Design language.
+\item Constructed a powerful API to query thousands of legislators and bills data; hosted the API on AWS.
+\item Designed 7 interfaces for users to search the data and save preferences.
+\end{rSubsection}
+
+\begin{rSubsection}{Kickoff: A Soccer Statistics Website (JavsScript, PHP)}{May 2015 - June 2015}{}{}
+\item Established a large-scale database for thousands of UEFA soccer teams, players and matches.
+\item Developed a crawler to collect matches data from UEFA websites every day.
+\item Designed an interface for users to follow their favorite teams and give ratings to players after matches.
+\item Proposed an algorithm to select most valuable players according to their performances and ratings.
+\end{rSubsection}
+
+\begin{rSubsection}{PDF Translation Platform (JavaScript, PHP)}{January 2015 - June 2015}{}{}
+\item Collaborated with a team member and built an online platform for reading and translating public PDF files.
+\item Created an intuitive front-end interface for translators to select sections they want to translate.
+\item Devised an algorithm to bypass special characters and stored multiple versions of translations in database.
+\end{rSubsection}
+
+\begin{rSubsection}{Machine Learning and Data Mining (Python)}{March 2015 - May 2015}{}{Shanghai Jiao Tong University}
+\item Led a 3-member group and constructed a multi-thread large-scale patents classifier with thread pool; achieved accuracy of 96.81\% by applying Min-Max Modular SVM.
+\item Reduced the standard deviation of Netflix movie recommendation system to 0.90 (top 5\% in the class) using multiple optimization algorithms such as stochastic gradient descent and collaborative filtering.
+\end{rSubsection}
+
+
+% \begin{rSubsection}{Visual Media and Data Management}{Sept. 2014 - Jan. 2015}{}{Shanghai Jiao Tong University}
+% \item Led a team to accelerate video deblurring by using GPU parallel computing.
+% \item Optimized Simple Linear Iteration Clustering (SLIC) algorithm and achieved higher accuracy in clustering pixels.
+% %\item Proposed a faster method to calculate fuzzy kernel.
+% \end{rSubsection}
+
+\end{rSection}
+
+% \begin{rSection}{Projects}
+
+%\begin{rSubsection}{Podo Timer}{Jan. 2015 - Present}{}{}
+%\item Wrote the Android app in Java and adopted Pomodoro technique for better time management.
+%\item Provided various time period options for different types of tasks.
+%\item Allowed users to record daily workload and evaluate their efficiency at work.
+%\end{rSubsection}
+
+% \begin{rSubsection}{Bluetooth Controller}{Sept. 2014 - Jan. 2015}{}{}
+% \item Used an Android device to control a toy car through Bluetooth protocol.
+% \item Implemented kinetic, gesture and voice user interfaces.
+% \item Wrote a program to transfer live streaming video from a camera on the car to the Android device.
+% \end{rSubsection}
+
+% \end{rSection}
+
+% %----------------------------------------------------------------------------------------
+% %	SKILLS SECTION
+% %----------------------------------------------------------------------------------------
+%
+% \begin{rSection}{Skills}
+%
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+% Programming Languages & C, C++, Java (Android), Javascript, PHP, Python, SQL\\
+% Tools \& Platforms & Apache, Git, Linux, Nginx, Vi (Vim)
+% \end{tabular}
+%
+%
+%----------------------------------------------------------------------------------------
+%	Publication
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Publications}
+H. Gao et al. An Efficient Cache Algorithm to Accelerate the I/O Processing of Data Deduplication in Storage Systems. In \textit{Proc. of the IEEE ICPADS’16}, 2016.
+\end{rSection}
+
+% \end{rSection}
+%
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
