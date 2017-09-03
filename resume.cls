@@ -95,6 +95,7 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
+  \vspace{-0.2em} % Some space after the list of bullet points
   % \sectionskip
   \MakeUppercase{\bf #1} % Section title
   \sectionlineskip
@@ -112,7 +113,7 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
-  \vspace{-0.3em} % Some space after the list of bullet points
+  \vspace{-0.4em} % Some space after the list of bullet points
  {\bf #1} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\

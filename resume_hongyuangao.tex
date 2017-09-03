@@ -48,7 +48,7 @@
 \begin{rSection}{Education}
 
 % \begin{rEducation}{University of Southern California}{August 2016 - May 2018 (expected)}{M.S. in Computer Science, GPA: 4.0 / 4.0}{Los Angeles, CA}
-\begin{rEducation}{University of Southern California}{May 2018}{M.S. in Computer Science, GPA: 4.0 / 4.0}{Los Angeles, CA}
+\begin{rEducation}{University of Southern California}{May 2018}{M.S. in Computer Science, GPA: 3.8 / 4.0}{Los Angeles, CA}
 % \item Courses in progress: Analysis of Algorithms, Web Technologies.
 \end{rEducation}
 
@@ -68,11 +68,9 @@
 
 \vspace{-0.3em} % Some space after the list of bullet points
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Python, C/C++, Java, JavaScript/Node.js, PHP\\
-% Programming Languages & Python, C/C++, Java, JavaScript/Node.js, Ruby, PHP\\
-Web Frameworks & Bootstrap, AngularJS, Express.js, Django, Tornado\\
-% Web Frameworks & Bootstrap, AngularJS, Express.js, Django, Tornado, Ruby on Rails\\
-Tools \& Platforms & MySQL, SQLite, Git, Apache, Nginx, Android Studio, Vim
+Programming Languages & Python, C, C++, Java, JavaScript/Node.js, PHP\\
+Web Frameworks & Bootstrap, React, AngularJS, Django, Tornado, Three.js\\
+Tools & MySQL, SQLite, Redshift, S3, ESLint, Mocha, Git, Apache, Nginx, Vim
 \end{tabular}
 \end{rSection}
 
@@ -82,15 +80,20 @@ Tools \& Platforms & MySQL, SQLite, Git, Apache, Nginx, Android Studio, Vim
 
 \begin{rSection}{Experience}
 
+\begin{rSubsection}{Electronic Arts}{May 2017 - August 2017}{Software Engineering Intern}{Seattle, WA}
+\item Developed a 3D web application to inspect gameplay events (eg. player tick, player death) on a 3D game terrain map using React and Three.js (a WebGL based 3D library).
+\item Created a Node.js service to periodically query latest player data from internal database, transform them to Three.js-friendly format and pushed them to Amazon S3.
+\item Created a Node.js service to monitor new transformed data on S3 and import them to Amazon Redshift using COPY command with throughput of 4 million records / minute.
+\item Designed a Redshift database schema that can store hundreds of millions of gameplay event records.
+\item Designed a set of APIs to fetch available games, maps and gameplay events with multiple parameters.
+\end{rSubsection}
+
 \begin{rSubsection}{Embedded and Pervasive Computing Center of SJTU}{March 2015 - June 2016}{Research Assistant}{Shanghai, China}
 \item Devised an efficient chunk-based cache algorithm for data deduplication in backup systems based on spacial locality; improved cache hit ratio by 5.2\%  and reduced I/O latency by 17.3\%.
 \item Combined the algorithm with container technique and saved memory consumption by 50.7\%.
 \item Won A-Class Bachelor's Thesis Award (top 10\%) and published a paper in IEEE ICPADS’16.
 \end{rSubsection}
 
-\begin{rSubsection}{Siemens Manufacturing and Engineering Center Ltd.}{January 2015 - February 2015}{Intern, IT Department}{Shanghai, China}
-\item Developed a GUI lucky draw system for staff in Python with Tkinter GUI package for the year-end party.
-\end{rSubsection}
 
 \end{rSection}
 
@@ -112,13 +115,13 @@ Tools \& Platforms & MySQL, SQLite, Git, Apache, Nginx, Android Studio, Vim
 \item Designed 7 interfaces for users to search the data and save preferences.
 \end{rSubsection}
 
-\begin{rSubsection}{Kickoff: A Soccer Statistics Website (JavsScript, PHP)}{May 2015 - June 2015}{}{}
-\item Established a large-scale database for thousands of UEFA soccer teams, players and matches.
-\item Developed a crawler to collect matches data from UEFA websites every day.
-\item Designed an interface for users to follow their favorite teams and give ratings to players after matches.
-\item Proposed an algorithm to select most valuable players according to their performances and ratings.
-\end{rSubsection}
-
+% \begin{rSubsection}{Kickoff: A Soccer Statistics Website (JavsScript, PHP)}{May 2015 - June 2015}{}{}
+% \item Established a large-scale database for thousands of UEFA soccer teams, players and matches.
+% \item Developed a crawler to collect matches data from UEFA websites every day.
+% \item Designed an interface for users to follow their favorite teams and give ratings to players after matches.
+% \item Proposed an algorithm to select most valuable players according to their performances and ratings.
+% \end{rSubsection}
+%
 \begin{rSubsection}{PDF Translation Platform (JavaScript, PHP)}{January 2015 - June 2015}{}{}
 \item Collaborated with a team member and built an online platform for reading and translating public PDF files.
 \item Created an intuitive front-end interface for translators to select sections they want to translate.
