@@ -68,9 +68,9 @@
 
 \vspace{-0.3em} % Some space after the list of bullet points
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
-Programming Languages & Python, C, C++, Java, JavaScript/Node.js, PHP\\
-Web Frameworks & Bootstrap, React, AngularJS, Django, Tornado, Three.js\\
-Tools & MySQL, SQLite, Redshift, S3, ESLint, Mocha, Git, Apache, Nginx, Vim
+Programming Languages & Python, JavaScript/Node.js, SQL, C, C++, Java, PHP\\
+Web Frameworks & Bootstrap, React, AngularJS, Tornado, Three.js\\
+Tools & *nix, Git, Apache, Nginx, ESLint, Mocha, Vim, Redshift, S3 
 \end{tabular}
 \end{rSection}
 
@@ -81,11 +81,11 @@ Tools & MySQL, SQLite, Redshift, S3, ESLint, Mocha, Git, Apache, Nginx, Vim
 \begin{rSection}{Experience}
 
 \begin{rSubsection}{Electronic Arts}{May 2017 - August 2017}{Software Engineering Intern}{Seattle, WA}
-\item Developed a 3D web application to inspect gameplay events (eg. player tick, player death) on a 3D game terrain map using React and Three.js (a WebGL based 3D library).
-\item Created a Node.js service to periodically query latest player data from internal database, transformed them to Three.js-friendly format and pushed them to Amazon S3.
-\item Created a Node.js service to monitor new transformed data on S3 and import them to Amazon Redshift using COPY command with throughput of 60 thousand records / second.
-\item Designed a Redshift database schema that can store hundreds of millions of gameplay event records.
-\item Collaborated with team members to construct a set of powerful APIs to fetch games, maps and gameplay events.
+\item Developed a 3D web application from scratch to inspect gameplay events (eg. player tick, player death) on a 3D game terrain map using React and Three.js (a WebGL-based 3D library).
+\item Proposed a solution for loading 3D map on web; compressed raw model to reduce size and loading time by 80\%.
+\item Created a Node.js service to monitor latest player data of internal database, push them to Amazon S3 and import them to Amazon Redshift using COPY command with throughput of 60 thousand records / second.
+\item Communicated with other teams and settled down Redshift database schema that can store millions of records.
+\item Collaborated with team members to construct a set of powerful APIs to query games, maps and gameplay events.
 \end{rSubsection}
 
 \begin{rSubsection}{Embedded and Pervasive Computing Center of SJTU}{March 2015 - June 2016}{Research Assistant}{Shanghai, China}
