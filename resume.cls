@@ -68,7 +68,7 @@
 % \printname is used to print the name as a page header
 \def \printname {
   \begingroup
-    \hfil{\MakeUppercase{\namesize\bf \@name}}\hfil
+    \hfil{\MakeUppercase{\namesize\bfseries \@name}}\hfil
     \nameskip\break
   \endgroup
 }
@@ -97,7 +97,9 @@
 \newenvironment{rSection}[1]{ % 1 input argument - section name
   \vspace{-0.2em} % Some space after the list of bullet points
   % \sectionskip
-  \MakeUppercase{\bf #1} % Section title
+  % \MakeUppercase \textbf {#1} % Section title
+   \MakeUppercase {\bfseries#1} % Section title
+  \normalfont
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
@@ -109,33 +111,35 @@
 }
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE FORMATTING
+%	EDUCATION FORMATTING
+%----------------------------------------------------------------------------------------
+
+\newenvironment{rEducation}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
+  \vspace{-0.3em} % Some space after the list of bullet points
+ \textbf{#1} \hfill {#2} % Bold company name and date on the right
+ \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
+  \\
+  \vspace{-0.5em}
+  {#3} \hfill {\em #4} % Italic job title and location
+  }\smallskip
+}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
-  \vspace{-0.4em} % Some space after the list of bullet points
- {\bf #1} \hfill {#2} % Bold company name and date on the right
+  \vspace{-0.3em} % Some space after the list of bullet points
+ \textbf{#1}  \hfill {#2} % Bold company name on the left and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
+  {\em #3} \hfill {\em #4} % Italic job title on the left and location on the right
   }\smallskip
   \vspace{-0.2em}
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
    \itemsep -0.5em \vspace{-0.6em} % Compress items in list together for aesthetics
   }{
   \end{list}
-}
-
-%%%%%%%%% education
-
-\newenvironment{rEducation}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
-  \vspace{-0.3em} % Some space after the list of bullet points
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  \vspace{-0.5em}
-  {#3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip

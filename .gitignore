@@ -1,12 +1,7 @@
-
 *.gz
-
 *.aux
-
 *.log
-
 *.out
-
 *.pdf
-resume_hongyuangao.fdb_latexmk
-resume_hongyuangao.fls
+*.fdb_latexmk
+*.fls
