@@ -22,12 +22,16 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
-%\usepackage[left=0.6in,top=0.6in,right=0.6in,bottom=0.6in]{geometry} % Document margins
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+%usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+% min margin = 0.5
+\usepackage[margin=0.5in]{geometry}
+
 \usepackage{hyperref}
 
+\raggedright
+
+
 \name{Hongyuan Gao} % Your name
-\address{Software Engineer @ Google LLC} % Your address
 \address{\href{mailto://gao0927@gmail.com}{gao0927@gmail.com} \\ +1 (213) 245-5576 \\ Santa Clara, CA} % Your phone number and email
 % \address{\href{mailto://gao0927@gmail.com}{gao0927@gmail.com} \\ \href{https://github.com/hikoship}{github.com/hikoship} \\ \href{http://hgao.net}{hgao.net}} % Your address
 % \address{(213) 245-5576 \\ 1372 Casa Ct, Santa Clara, CA 95051} % Your phone number and email
@@ -56,8 +60,7 @@ Multi-disciplined technical manager with expertise in software and human factors
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Key Skills}
 
-\vspace{-0.3em} % Some space after the list of bullet points
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{2em}} l }
 Programming & Java, Python, JavaScript, SQL, Git, unit and integration testing\\
 System design & quota calculation\\
 Data analysis & SQL, dashboarding, A/B testing\\
@@ -70,7 +73,7 @@ Leadership & Active team player, efficient communicator
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Experience}
 
-\begin{rSubsection}{Google Play, Google LLC}{July 2018 - Present}{Software Engineer}{Mountain View, CA}
+\begin{rSubsection}{Software Engineer}{Google}{Mountain View, CA}{July 2018 -- Present}
 \item Worked on various areas of Google Play Store over the years, from storefront to app installation infrastructure
 \item Refactored app installation logging infra to close the gap of missing logs, which help justify and unblock several following projects.
 \item Built several features around low storage solutions, reducing the install error rates due to storage by xx  combined.
@@ -84,7 +87,7 @@ Leadership & Active team player, efficient communicator
 \item Built a pipeline to process and visualize Google Play Store data usage logs.
 \end{rSubsection}
 
-\begin{rSubsection}{Electronic Arts}{May 2017 - August 2017}{Software Engineering Intern}{Seattle, WA}
+\begin{rSubsection}{Software Engineer Intern}{Electronic Arts}{Seattle, WA}{May 2017 -- August 2017}
 \item Developed a 3D web application from scratch to inspect gameplay events (eg. player tick, player death) on a 3D game terrain map using React and Three.js (a WebGL-based 3D library).
 \item Proposed a solution for loading 3D map on web; compressed raw model to reduce size and loading time by 80\%.
 \item Created a Node.js service to monitor latest player data of internal database, push them to Amazon S3 and import them to Amazon Redshift using COPY command with throughput of 60 thousand records / second.
@@ -174,12 +177,12 @@ Leadership & Active team player, efficient communicator
 
 \begin{rSection}{Education}
 
-\begin{rEducation}{M.S. in Computer Science}{May 2018}{University of Southern California}{Los Angeles, CA}
+\begin{rEducation}{M.S. in Computer Science}{University of Southern California}{Los Angeles, CA}{May 2018}
 % \item Courses in progress: Analysis of Algorithms, Web Technologies.
 \end{rEducation}
 
 % \begin{rEducation}{Shanghai Jiao Tong University}{September 2012 - June 2016}{B.S. in Computer Science, GPA: 3.5 / 4.0}{Shanghai, China}
-\begin{rEducation}{B.S. in Computer Science}{June 2016}{Shanghai Jiao Tong University}{Shanghai, China}
+\begin{rEducation}{B.S. in Computer Science}{Shanghai Jiao Tong University}{Shanghai, China}{June 2016}
 % \item Core courses: Algorithms, Computer Architecture, Computer Networking, Data Structures, Database Systems, Operating Systems, Software Engineering.
 % \item Core courses: Algorithms, Artificial Intelligence, Compilers, Computer Architecture, Computer Networking, Data Structures, Database Systems, Operating Systems, Software Engineering.
 \end{rEducation}

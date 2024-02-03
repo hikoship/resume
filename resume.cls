@@ -20,11 +20,14 @@
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
-\LoadClass[10pt,letterpaper]{article} % Font size and paper type
+\LoadClass[11pt,letterpaper]{article} % Font size and paper type
+
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
 \usepackage{ifthen} % Required for ifthenelse statements
+% \renewcommand{\familydefault}{\sfdefault}
+% \usepackage[sfdefault]{lato}
 
 \pagestyle{empty} % Suppress page numbers
 
@@ -95,7 +98,7 @@
 
 % Defines the rSection environment for the large sections within the CV
 \newenvironment{rSection}[1]{ % 1 input argument - section name
-  \vspace{-0.2em} % Some space after the list of bullet points
+  \vspace{-0.0em} % Some space after the list of bullet points
   % \sectionskip
   % \MakeUppercase \textbf {#1} % Section title
    \MakeUppercase {\bfseries#1} % Section title
@@ -103,7 +106,7 @@
   \sectionlineskip
   \hrule % Horizontal line
   \begin{list}{}{ % List for each individual item in the section
-    \setlength{\leftmargin}{1.5em} % Margin within the section
+    \setlength{\leftmargin}{0.0em} % Margin within the section
   }
   \item[]
 }{
@@ -115,13 +118,10 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rEducation}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
-  \vspace{-0.3em} % Some space after the list of bullet points
- \textbf{#1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  \vspace{-0.5em}
-  {#3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
+  \vspace{0.0em} % Some space after the list of bullet points
+
+ \textbf{#1}, {#2} -- {#3} \hfill {#4}
+
 }
 
 %----------------------------------------------------------------------------------------
@@ -129,15 +129,11 @@
 %----------------------------------------------------------------------------------------
 
 \newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
-  \vspace{-0.3em} % Some space after the list of bullet points
- \textbf{#1}  \hfill {#2} % Bold company name on the left and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title on the left and location on the right
-  }\smallskip
-  \vspace{-0.2em}
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.6em} % Compress items in list together for aesthetics
+  \vspace{0.0em} % Some space after the list of bullet points
+ \textbf{#1}, {#2} -- {#3} \hfill {#4}
+  \vspace{0em}
+  \begin{list}{$\cdot$}{\leftmargin=1em} % \cdot used for bullets, no indentation
+   \itemsep 0.0em \vspace{0em} % Compress items in list together for aesthetics
   }{
   \end{list}
 }
